@@ -10,4 +10,5 @@ services:
     volumes:
       - /etc/letsencrypt:/etc/letsencrypt
       - ./site:/usr/share/nginx/html
+      - /home/ubuntu/uno/frontend/dist:/usr/share/nginx/html/uno/frontend
 
