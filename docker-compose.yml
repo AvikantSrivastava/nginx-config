@@ -13,3 +13,13 @@ services:
       - /home/ubuntu/uno/frontend/dist:/site/uno/
       - /home/ubuntu/blog/dist:/site/blog/
 
+  uno_server:
+    build:
+      context: /home/ubuntu/uno/backend/
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+    restart: always
+    container_name: uno_server
