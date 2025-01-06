@@ -10,5 +10,5 @@ services:
     volumes:
       - /etc/letsencrypt:/etc/letsencrypt
       - ./site:/site
-      - /home/ubuntu/uno/frontend/dist:/site/uno/frontend
+      - /home/ubuntu/uno/frontend/dist:/site/uno/
 
