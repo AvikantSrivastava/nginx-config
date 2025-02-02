@@ -22,4 +22,4 @@ services:
       - ./site:/site
       - /home/ubuntu/uno/frontend/dist:/site/uno/
       - /home/ubuntu/blog/dist:/site/blog/
-
+      - /home/ubuntu/nginx-config/nginx-logs:/var/log/nginx
