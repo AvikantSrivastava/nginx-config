@@ -11,6 +11,8 @@ services:
       - PORT=5000
     restart: always
     container_name: uno_server
+    networks:
+      - docker_shared_network
   web:
     build: .
     container_name: web
