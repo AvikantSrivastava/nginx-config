@@ -32,6 +32,7 @@ services:
 
   rss_reader:
     image: ghcr.io/0x2e/fusion:latest
+    container_name: rss_reader
     ports:
       - "127.0.0.1:8080:8080"
     environment:
