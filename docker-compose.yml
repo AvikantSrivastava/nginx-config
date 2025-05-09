@@ -40,7 +40,7 @@ services:
       - DB="fusion.db"
     restart: "unless-stopped"
     volumes:
-      - ./data:/home/ubuntu/rss_data
+      - ./fusion/fusion.db:/home/ubuntu/rss_data/fusion.db
     networks:
       - docker_shared_network
 
