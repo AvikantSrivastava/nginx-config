@@ -37,10 +37,10 @@ services:
       - "127.0.0.1:8080:8080"
     environment:
       - PASSWORD=fusion
-      - DB=fusion.db
+      - DB=/data/fusion.db
     restart: "unless-stopped"
     volumes:
-      - /home/ubuntu/rss_data/fusion.db:/fusion/fusion.db
+      - /home/ubuntu/rss_data/:/fusion/data
     networks:
       - docker_shared_network
 
