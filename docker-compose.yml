@@ -40,6 +40,8 @@ services:
     restart: "unless-stopped"
     volumes:
       - ./data:/home/ubuntu/rss_data
+    networks:
+      - docker_shared_network
 
 networks:
   docker_shared_network:
