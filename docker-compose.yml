@@ -26,6 +26,7 @@ services:
       - /home/ubuntu/blog/dist:/site/blog/
       - /home/ubuntu/secret-pastebin/frontend/dist:/site/sneak/
       - /home/ubuntu/nginx-config/nginx-logs:/var/log/nginx
+      - /home/ubuntu/nix-flakes:/site/nix
     networks:
       - docker_shared_network
 
